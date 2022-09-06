@@ -21,7 +21,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, build/target/product/embedded.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/twrp/config/common.mk)
 
 # Inherit language packages
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
@@ -68,7 +68,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Device identifier. This must come after all inclusions
 PRODUCT_PLATFORM := SDM660
-PRODUCT_NAME := omni_jasmine_sprout
+PRODUCT_NAME := twrp_jasmine_sprout
 PRODUCT_DEVICE := jasmine_sprout
 PRODUCT_BRAND := xiaomi
 PRODUCT_MODEL := Mi A2
